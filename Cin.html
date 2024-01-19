@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <input type="text" placeholder=" Title" class="top-find" id="title-input"/>
+        <input type="text" placeholder=" Year" class="top-find" id="year-input"/>
+        <input type="text" placeholder=" Rank" class="top-find" id="rank-input"/>
+        <button class="add-button" onclick="addMovie()">Add Movie</button>
+      </div>
+      <div class="filter-container">
+        <input type="text" placeholder=" Enter year" class="year-filter" id="year-filter"/>
+    </select>
+        <select name="yeat-filter" id="sort" onchange="sortMovies()">
+        <option value="Ascending">Ascending</option>
+        <option value="Decending">Decending</option>
+    </select>
+    </select>
+      </div>
+      <div class="movie-list" id="movie-container">
+      </div>
+    </div>
+    <script src="function.js"></script>
+  </body>
+</html>
